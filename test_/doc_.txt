@@ -1,0 +1,74 @@
+Listed directory ai-product-lab-abccc
+Viewed README.md:1-165
+Viewed 01-worksheet.md:1-174
+
+Chào bạn, sau khi phân tích mã nguồn và các tài liệu trong dự án (đặc biệt là `README.md` và `01-worksheet.md`), mình xin tóm tắt chi tiết yêu cầu của **Lab 02: AI Product Scoping (Vin Smart Future)** và từng bước để hoàn thành nó như sau:
+
+### 🎯 Tổng quan dự án
+Bạn sẽ đóng vai trò là một **AI Product Engineer** tại bộ phận công nghệ **Vin Smart Future** của Vingroup. Nhiệm vụ của bạn (và nhóm của bạn) là tìm kiếm một vấn đề vận hành thực tế ở các công ty thành viên (như VinFast, Xanh SM, Vinhomes, Vinmec...), đánh giá xem có nên dùng AI để giải quyết không, và xây dựng bản thiết kế ranh giới hệ thống (Scope) cùng một đoạn code prototype nhỏ để thử nghiệm.
+
+Dự án này sử dụng cơ chế **chấm điểm nhóm (60 điểm)** và **điểm cá nhân (40 điểm)**, dùng chung một kho lưu trữ (repository).
+
+---
+
+### 📋 Các file cần nộp (Deliverables)
+Khi kết thúc, thư mục gốc của dự án phải có 5 file chính (nếu thiếu sẽ bị trừ điểm hoặc không qua được tool chấm điểm tự động):
+1. 📄 `01-problem-scan.md` (Bài cá nhân - 15đ)
+2. 📄 `03-ai-log.md` (Bài cá nhân - 15đ)
+3. 🖼️ `04-workflow-diagram.png` hoặc `.pdf` (Bài nhóm - 20đ)
+4. 📄 `02-deep-dive-report.md` (Bài nhóm - 40đ)
+5. 💻 `starter-code/prompt_prototype.py` (Bài nhóm - 10đ prototype)
+
+---
+
+### 🚀 Hướng dẫn chi tiết từng bước để hoàn thành
+
+#### Bước 1: Thiết lập môi trường lập trình (Bắt buộc)
+Bạn cần thiết lập môi trường để chạy code Python giao tiếp với AI:
+1. Tạo môi trường ảo: Chạy `python -m venv .venv` trong terminal.
+2. Kích hoạt môi trường ảo:
+   - Trên Windows PowerShell: `.venv\Scripts\Activate.ps1`
+   - Trên Mac/Linux: `source .venv/bin/activate`
+3. Cài đặt thư viện: `pip install google-genai google-generativeai pytest`
+4. Lấy API Key của Gemini và thiết lập biến môi trường (Lưu ý: Không được dán thẳng Key vào trong code).
+   - Trên Windows PowerShell: `$env:GEMINI_API_KEY="Mã-Key-Của-Bạn"`
+
+#### Bước 2: Làm bài tập CÁ NHÂN
+**1. Hoàn thiện file [01-problem-scan.md](file:///d:/code/ai-product-lab-abccc/01-problem-scan.md)**
+- **Phase 1 (SCAN):** Dựa vào 4 lăng kính (Lặp lại, Tốn thời gian, AI-upgrade, Stakeholder Pain), bạn hãy suy nghĩ hoặc dùng ChatGPT/Gemini để tìm ra **5 bài toán vận hành thực tế** đang gặp vấn đề tại các công ty Vingroup.
+- **Phase 2 (QUICK-ASSESS):** Chọn ra **3 bài toán** tiềm năng nhất trong 5 bài trên và điền thông tin vào 3 Thẻ bài toán (Quick Problem Cards). Trong thẻ cần nêu rõ: Ai đang gặp rắc rối, quy trình thủ công hiện tại, bước nào gây nghẽn nhất, và dùng chỉ số nào để đo lường thành công.
+
+**2. Hoàn thiện file [03-ai-log.md](file:///d:/code/ai-product-lab-abccc/03-ai-log.md)**
+- **Phase 6 (REFLECTION):** Đây là nhật ký cá nhân. Bạn hãy viết một đoạn tự luận ngắn (15 điểm) kể về việc bạn đã dùng AI như thế nào trong lúc làm bài lab này.
+- **Quan trọng:** Phải chỉ ra được lúc nào AI nói sai (hallucinate) hoặc khuyên bậy, và bạn đã sửa lại Prompt như thế nào để bắt AI trả lời đúng.
+
+#### Bước 3: Làm bài tập NHÓM (Cả nhóm thảo luận chung)
+**1. Chốt 1 bài toán và vẽ Sơ đồ (File [04-workflow-diagram.png](file:///d:/code/ai-product-lab-abccc/04-workflow-diagram.png))**
+- Cả nhóm chọn ra 1 bài toán hay nhất từ các cá nhân.
+- Vẽ sơ đồ quy trình thủ công hiện tại của bài toán đó lên bảng trắng hoặc giấy.
+- **Yêu cầu:** Sơ đồ phải đánh dấu rõ các điểm chuyển giao công việc (Handoff), các điểm tắc nghẽn (Bottleneck 🔴) và ghi rõ thời gian tốn bao nhiêu.
+- Chụp ảnh lại cho rõ nét và lưu vào thư mục dự án.
+
+**2. Làm Báo cáo Phân tích sâu (File [02-deep-dive-report.md](file:///d:/code/ai-product-lab-abccc/02-deep-dive-report.md))**
+- Nhớ ghi danh sách Tên nhóm và MSSV của tất cả các thành viên lên đầu file.
+- Hoàn thành bảng **Problem Statement (6-field)** để xác định rõ ranh giới của vấn đề.
+- Mô tả quy trình tương lai **(Future-State Flow)**: Chỉ rõ bước nào AI sẽ làm, bước nào con người phải duyệt lại (Human-in-the-loop), và phương án dự phòng (Fallback) nếu AI bị lỗi là gì.
+- Điền bảng **Evaluate** và ra quyết định cuối cùng là GO (làm tiếp), NOT YET hay NO-GO. 
+
+**3. Viết Code Prototype (File [starter-code/prompt_prototype.py](file:///d:/code/ai-product-lab-abccc/starter-code/prompt_prototype.py))**
+- Một thành viên mở file code này lên. Viết System Prompt quy định rõ ranh giới cấm không cho mô hình vượt qua (ví dụ: "Tuyệt đối không cấp quyền hoàn tiền cho khách").
+- Viết **3 câu prompt tấn công (Adversarial Prompts)** đóng vai khách hàng gian lận cố tình lừa AI phá vỡ ranh giới.
+- Chạy thử đoạn code và xem AI của bạn có bị lừa không.
+
+#### Bước 4: Kiểm tra và Nộp bài
+- Ở terminal, chạy lệnh: `python autograder/autograder.py`.
+- Nếu công cụ tự động báo **[SUCCESS]**, nghĩa là nhóm bạn đã có đủ 4 file md/png cần thiết.
+- Sau đó, commit và push code lên GitHub Classroom:
+  ```bash
+  git add .
+  git commit -m "Submit Lab 02"
+  git push origin main
+  ```
+
+---
+💡 **Bạn muốn bắt đầu từ bước nào trước?** Nếu bạn muốn mình hỗ trợ "brainstorm" các ý tưởng tìm kiếm bài toán (Bước 2) hoặc viết System Prompt bảo mật (Bước 3), hãy cho mình biết nhé!
