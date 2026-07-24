@@ -1,8 +1,8 @@
 # 📄 01-problem-scan.md — Báo Cáo Phase 1 & 2 (Scan & 3 Quick Cards)
 
 **Thông tin cá nhân:**
-- Họ và tên: ____________________
-- Mã số sinh viên (MSSV): ____________________
+- Họ và tên: Đỗ Trung Kiên
+- Mã số sinh viên (MSSV): 2A202601287
 
 ---
 

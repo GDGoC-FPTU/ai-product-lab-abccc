@@ -1,8 +1,8 @@
 # Báo cáo cá nhân về quá trình làm việc cùng trợ lý AI
 
-Sinh viên thực hiện:
-- Họ và tên: ____________________
-- Mã số sinh viên: ____________________
+**Thông tin cá nhân:**
+- Họ và tên: Đỗ Trung Kiên
+- Mã số sinh viên (MSSV): 2A202601287
 
 ---
 
