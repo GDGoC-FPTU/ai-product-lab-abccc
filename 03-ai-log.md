@@ -1,7 +1,7 @@
 # 03 — AI Log & Reflection
 
-**Họ tên:** [Lê Kim Nam]  
-**MSSV:** [2A202601803]  
+**Họ tên:** [Trịnh Quốc Trọng]  
+**MSSV:** [2A202601779]  
 **Bài toán đã chọn:** Vinhomes — Phân loại & Điều hướng phản ánh cư dân
 
 ---
